@@ -95,18 +95,76 @@ for (let index10 = 10; index10 >= 1; index10 = index10 - 1) {
 newDiv(currentArray.join(", "))
 
 let sampleArray = [
-    469, 755, 244, 245, 758, 450, 302, 20, 712, 71, 
+    469, 755, 244, 245, 758, 450, 302, 20, 712, 71,
     456, 21, 398, 339, 882, 848, 179, 535, 940, 472,
 ];
 createAppend("kata 11")
 newDiv(sampleArray.join(", "))
 
 createAppend("kata 12")
+currentArray = []
 
 for (let index12 = 2; index12 < sampleArray.length; index12 = index12 + 1) {
-        if (sampleArray % 2) {
-        console.log(sampleArray[index12])
-        }
+    if (sampleArray[index12] % 2 === 0) {
+
+        currentArray.push(sampleArray[index12])
+    }
+
+}
+newDiv(currentArray.join(", "))
+
+createAppend("kata 13")
+currentArray = []
+
+for (let index13 = 0; index13 < sampleArray.length; index13 = index13 + 1) {
+    if (sampleArray[index13] % 2 === 1) {
+
+        currentArray.push(sampleArray[index13])
+    }
+
+}
+newDiv(currentArray.join(", "))
+
+createAppend("kata 14")
+currentArray = []
+
+for (let index14 = 0; index14 < sampleArray.length; index14 = index14 + 1) {
+    currentArray.push(sampleArray[index14] * sampleArray[index14])
+
+}
+newDiv(currentArray.join(", "))
+
+createAppend("kata 15")
+
+let sumVar = 0
+for (let index15 = 1; index15 <= 20; index15 = index15 + 1) {
+    sumVar = sumVar + index15
+}
+newDiv (sumVar)
+
+createAppend("kata 16")
+sumVar = 0
+for (let index16 = 0; index16 < sampleArray.length; index16 = index16 + 1) {
+    sumVar = sumVar + sampleArray[index16]
+}
+newDiv(sumVar)
+
+createAppend("kata 17")
+let lowestNumVar = sampleArray[0]
+for (let index17 = 0; index17 < sampleArray.length; index17 = index17 + 1) {
+    if (lowestNumVar > sampleArray[index17]) {
+        lowestNumVar = sampleArray[index17]
+    }
     
 }
-newDiv(sampleArray.join(", "))
+newDiv(lowestNumVar)
+
+createAppend("kata 18")
+let highestNumVar = sampleArray[0]
+for (let index18 = 0; index18 < sampleArray.length; index18 = index18 + 1) {
+    if (highestNumVar < sampleArray[index18]) {
+        highestNumVar = sampleArray[index18]
+    }
+    
+}
+newDiv(highestNumVar)
